@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+<persistence-unit name="persistenceUnit" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>com.pepsico.flexbenefits.domain.FbeUsuario</class>
+        <class>com.pepsico.flexbenefits.domain.FbeAntiguedadDependientes</class>
+        <class>com.pepsico.flexbenefits.domain.FbeAntiguedades</class>
+        <class>com.pepsico.flexbenefits.domain.FbeAplicabilidades</class>
+        <class>com.pepsico.flexbenefits.domain.FbeTipoCalculos</class>
+        <!--class>com.pepsico.flexbenefits.domain.FbeAreasNomina</class-->
+        <!--class>com.pepsico.flexbenefits.domain.FbeAreasPersonal</class-->
+        <class>com.pepsico.flexbenefits.domain.FbeCategorias</class>
+        <!--class>com.pepsico.flexbenefits.domain.FbeCentrosCostos</class-->
+        <class>com.pepsico.flexbenefits.domain.FbeCostosSubproductos</class>
+        <class>com.pepsico.flexbenefits.domain.FbeDatosFiscales</class>
+        <class>com.pepsico.flexbenefits.domain.FbeDependientes</class>
+        <!--class>com.pepsico.flexbenefits.domain.FbeDivisiones</class-->
+        <class>com.pepsico.flexbenefits.domain.FbeEmpleados</class>
+        <class>com.pepsico.flexbenefits.domain.FbeEmpleadosShort</class>
+        <!--class>com.pepsico.flexbenefits.domain.FbeEmpresas</class-->       
+        <class>com.pepsico.flexbenefits.domain.FbeFormasPago</class>
+        <class>com.pepsico.flexbenefits.domain.FbeGeneros</class>
+        <!--class>com.pepsico.flexbenefits.domain.FbeGruposPersonal</class-->
+        <class>com.pepsico.flexbenefits.domain.FbeMatrizElegibilidad</class>
+        <class>com.pepsico.flexbenefits.domain.FbeMatrizExcepciones</class>
+        <class>com.pepsico.flexbenefits.domain.FbeMovimientos</class>        
+        <class>com.pepsico.flexbenefits.domain.FbeParametros</class>
+        <class>com.pepsico.flexbenefits.domain.FbeParentescos</class>
+        <class>com.pepsico.flexbenefits.domain.FbePeriodos</class>
+        <class>com.pepsico.flexbenefits.domain.FbePeriodosShort</class>
+        <class>com.pepsico.flexbenefits.domain.FbePlanes</class>
+        <class>com.pepsico.flexbenefits.domain.FbePlanesShort</class>
+        <class>com.pepsico.flexbenefits.domain.FbePlanSubprodBenef</class>
+        <class>com.pepsico.flexbenefits.domain.FbePlanSubprodDepen</class>
+        <class>com.pepsico.flexbenefits.domain.FbePlanSubproducto</class>
+        <class>com.pepsico.flexbenefits.domain.FbePlanSubproductoShort</class>
+        <class>com.pepsico.flexbenefits.domain.FbePlanSubproductoCosto</class>
+        <class>com.pepsico.flexbenefits.domain.FbePlanConstancias</class>
+        <class>com.pepsico.flexbenefits.domain.FbeProductos</class>
+        <class>com.pepsico.flexbenefits.domain.FbeProductosShort</class>
+        <class>com.pepsico.flexbenefits.domain.FbeProductosLogo</class>
+        <class>com.pepsico.flexbenefits.domain.FbeProductosParentescos</class>
+        <!--class>com.pepsico.flexbenefits.domain.FbeRelacionesLaborales</class-->
+        <class>com.pepsico.flexbenefits.domain.FbeSalariosMinimos</class>
+        <!-- class>com.pepsico.flexbenefits.domain.FbeSubdivisiones</class-->
+        <class>com.pepsico.flexbenefits.domain.FbeSubproductos</class>
+        <class>com.pepsico.flexbenefits.domain.FbeSubproductosShort</class>
+        <class>com.pepsico.flexbenefits.domain.FbeSubproductosAhorro</class>
+        <class>com.pepsico.flexbenefits.domain.FbeSubproductosGenerico</class>
+        <class>com.pepsico.flexbenefits.domain.FbeSubproductosSalud</class>
+        <class>com.pepsico.flexbenefits.domain.FbeSubproductosVida</class>
+        <class>com.pepsico.flexbenefits.domain.FbeTiposDomicilio</class>
+        <class>com.pepsico.flexbenefits.domain.FbeTiposConstancias</class>
+        <class>com.pepsico.flexbenefits.domain.FbeZonasGeograficas</class>
+        <class>com.pepsico.flexbenefits.domain.FbeConceptos</class>
+        <class>com.pepsico.flexbenefits.domain.FbeIncidencias</class>
+        <class>com.pepsico.flexbenefits.domain.FbeIncidenciasSolicitadas</class>
+        <class>com.pepsico.flexbenefits.domain.FbeIncidenciasAplicadas</class>
+        <class>com.pepsico.flexbenefits.domain.FbeIncidenciasAplicadasDet</class>
+        <class>com.pepsico.flexbenefits.domain.FbeCalendarioNomina</class>
+        <class>com.pepsico.flexbenefits.domain.FbeAmortizacion</class>
+        <class>com.pepsico.flexbenefits.domain.FbePlanSubprodAuto</class>
+        <class>com.pepsico.flexbenefits.domain.FbePlanSubprodCasa</class>
+        <class>com.pepsico.flexbenefits.domain.FbeRelIncidenciasSol</class>        
+        <class>com.pepsico.flexbenefits.domain.FbeCostoPspAmorti</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.OracleDialect"/>
+            <!-- value="create" to build a new database on each run; value="update" to modify an existing database; value="create-drop" means the same as "create" but also drops tables when Hibernate closes; value="validate" makes no changes to the database -->
+            <property name="hibernate.hbm2ddl.auto" value="none"/>
+            <property name="org.hibernate.envers.audit_table_suffix" value="_H"/>            
+            <property name="hibernate.show.sql" value="true"/>            
+            <property name="hibernate.cache.region_prefix" value="adc"/>            
+            <property name="hibernate.cache.region.factory_class" value="org.hibernate.cache.ehcache.EhCacheRegionFactory"/>
+			<property name="hibernate.cache.use_second_level_cache"	value="true" />
+			<property name="net.sf.ehcache.configurationResourceName" value="ehcache.xml"/>
+			<property name="hibernate.cache.use_query_cache" value="true" />            
+			<property name="hibernate.generate_statistics" value="true"/>
+            <property name="hibernate.default_batch_fetch_size" value="100"/>           
+            <property name="hibernate.ejb.naming_strategy" value="org.hibernate.cfg.DefaultNamingStrategy"/>
+            <property name="hibernate.connection.charSet" value="UTF-8"/>
+            <!-- Uncomment the following two properties for JBoss only 
+            <property name="hibernate.validator.apply_to_ddl" value="false" />
+            <property name="hibernate.validator.autoregister_listeners" value="false" />
+            -->
+        </properties>
+    </persistence-unit>
+    
+<persistence-unit name="persistenceUnitEDC" transaction-type="RESOURCE_LOCAL">
+
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <class>com.pepsico.flexbenefits.domain.FbeDivisiones</class>
+        <class>com.pepsico.flexbenefits.domain.FbeSubdivisiones</class>
+        <class>com.pepsico.flexbenefits.domain.FbeEmpresas</class>
+        <class>com.pepsico.flexbenefits.domain.FbeEstados</class>
+        <class>com.pepsico.flexbenefits.domain.FbeMunicipios</class>
+        <class>com.pepsico.flexbenefits.domain.FbePaises</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.OracleDialect"/>
+            <!-- value="create" to build a new database on each run; value="update" to modify an existing database; value="create-drop" means the same as "create" but also drops tables when Hibernate closes; value="validate" makes no changes to the database -->
+            <property name="hibernate.hbm2ddl.auto" value="none"/>
+            <property name="hibernate.show.sql" value="true"/>
+            <property name="hibernate.cache.region_prefix" value="edc"/>            
+              <property name="net.sf.ehcache.configurationResourceName" value="ehcacheEdc.xml"/>  
+            <property name="hibernate.cache.region.factory_class" value="org.hibernate.cache.ehcache.EhCacheRegionFactory"/>
+			<property name="hibernate.cache.use_second_level_cache"	value="true" />
+			<property name="hibernate.cache.use_query_cache" value="true" />            
+			<property name="hibernate.generate_statistics" value="true"/>
+            <property name="hibernate.default_batch_fetch_size" value="100"/>           
+            <property name="hibernate.show.sql" value="true"/>
+            <property name="hibernate.ejb.naming_strategy" value="org.hibernate.cfg.DefaultNamingStrategy"/>
+            <property name="hibernate.connection.charSet" value="UTF-8"/>
+            <!-- Uncomment the following two properties for JBoss only 
+            <property name="hibernate.validator.apply_to_ddl" value="false" />
+            <property name="hibernate.validator.autoregister_listeners" value="false" />
+            -->
+        </properties>
+    </persistence-unit>
+
+
+	<persistence-unit name="persistenceUnitMiPepsico" transaction-type="RESOURCE_LOCAL">
+
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.OracleDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="none"/>
+            <property name="hibernate.show.sql" value="true"/>
+            <property name="hibernate.default_batch_fetch_size" value="100"/>           
+            <property name="hibernate.show.sql" value="true"/>
+            <property name="hibernate.ejb.naming_strategy" value="org.hibernate.cfg.DefaultNamingStrategy"/>
+            <property name="hibernate.connection.charSet" value="UTF-8"/>
+         
+        </properties>
+    </persistence-unit>
+    
+</persistence>
